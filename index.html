@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>الرئيسية</title>
+	
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/indexstyle.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<!-- <style>
+		:root { --brand-bg: #DEE9FF; }
+		body {
+			font-family: 'Poppins', sans-serif;
+			background-color: var(--brand-bg);
+			min-height: 100vh;
+			position: relative;
+		}
+		.background-ellipse {
+			position: fixed;
+			inset: 0;
+			pointer-events: none;
+			opacity: 0.9;
+			z-index: 0;
+			background-image: url('img/Ellipse 1.png');
+			background-repeat: no-repeat;
+			background-size: 1000px 620px;
+			background-position: right 0px top -50px;
+		}
+		.main-content { position: relative; z-index: 1; }
+		.navbar-brand img { width: 56px; height: auto; }
+		.hero {
+			/* padding-top: 2rem; */
+			padding-bottom: 4rem;
+		}
+		.cardContent {
+			background: #fff;
+			border-radius: 16px;
+			box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+		}
+	.style_btn{
+		background-color: #fff !important;
+		border-radius: 50px;
+		padding: 10px 20px;
+		color: #000;
+		font-weight: bold;
+	}
+		.cta-btn {
+			background-color: #2F66F5;
+			color: #fff;
+			border-radius: 12px;
+			padding: 12px 22px;
+		}
+		.photo img { max-width: 100%; height: auto; }
+		
+		/* Start Section Styles */
+		.start-card {
+			background: #fff;
+			border-radius: 16px;
+			box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+			height: 100%;
+		}
+		.start-card:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+		}
+		.icon-circle {
+			width: 80px;
+			height: 80px;
+			background: #2F66F5;
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 0 auto;
+		}
+		.icon-circle i {
+			font-size: 2rem;
+			color: #fff;
+		}
+		
+		/* About Section Styles */
+		.about-card {
+			background: #fff;
+			border-radius: 16px;
+			box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+		}
+		.services-list {
+			list-style: none;
+			padding: 0;
+		}
+		.services-list li {
+			padding: 8px 0;
+			position: relative;
+			padding-right: 25px;
+		}
+		.services-list li:before {
+			content: "✓";
+			position: absolute;
+			right: 0;
+			top: 8px;
+			color: #2F66F5;
+			font-weight: bold;
+		}
+
+		.about-card {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.aboutSection {
+    position: relative;
+    overflow: hidden;
+    background-color: #f8f9fa; /* لون خلفية خفيف */
+}
+
+.aboutSection::before,
+.aboutSection::after {
+    content: '';
+    position: absolute;
+    background-color: #007bff;
+    border-radius: 50%;
+    opacity: 0.2;
+}
+
+/* الدوائر الزرقاء على اليسار */
+.aboutSection::before {
+    top: 10%;
+    left: -50px;
+    width: 100px;
+    height: 100px;
+    background-color: #007bff;
+}
+
+.aboutSection::after {
+    top: 50%;
+    left: -30px;
+    width: 60px;
+    height: 60px;
+    background-color: #007bff;
+}
+
+/* الدوائر الزرقاء على اليمين */
+.aboutSection .container::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    right: -70px;
+    width: 140px;
+    height: 140px;
+    background-color: #007bff;
+    border-radius: 50%;
+    opacity: 0.2;
+}
+
+.aboutSection .container::after {
+    content: '';
+    position: absolute;
+    top: 70%;
+    right: -40px;
+    width: 80px;
+    height: 80px;
+    background-color: #007bff;
+    border-radius: 50%;
+    opacity: 0.2;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #e9f0f9;
+    padding: 3rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-bg-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    z-index: 0;
+}
+
+.footer-bg-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30%;
+    z-index: 0;
+}
+
+.footer .container {
+    position: relative;
+    z-index: 1;
+}
+
+.footer a,
+.footer span {
+    color: var(--text-dark) !important;
+    font-size: 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: var(--primary-color) !important;
+}
+
+.footer h5 {
+    color: var(--text-dark);
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 1rem;
+}
+
+.footer .footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-section {
+    position: relative;
+    padding: 0 20px;
+}
+
+.footer-section:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    left: 0;
+    width: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.footer-logo {
+    width: 100px;
+    height: auto;
+}
+
+/* للموبايل */
+@media (max-width: 768px) {
+    .footer-bg-right,
+    .footer-bg-left {
+        opacity: 0.3;
+    }
+    .footer-section {
+        border: none !important;
+        padding: 0;
+    }
+    .footer-section::after {
+        display: none;
+    }
+}
+
+
+	</style> -->
+</head>
+<body>
+	<div class="background-ellipse"></div>
+
+	<div class="main-content">
+		<nav class="navbar navbar-expand-lg bg-transparent pt-3">
+			<div class="container">
+				<a class="navbar-brand" href="#"><img src="img/logo.png" alt="MediTrack"></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div id="nav" class="collapse navbar-collapse">
+					<ul class="navbar-nav m-auto">
+						<li class="nav-item ms-3 p-4"><a class="nav-link active" href="index.html">الصفحة الرئيسية</a></li>
+						<li class="nav-item ms-3 p-4"><a class="nav-link" href="about.html">عن الموقع</a></li>
+						<li class="nav-item ms-3 p-4"><a class="nav-link" href="sections.html">الأقسام</a></li>
+						<li class="nav-item ms-3 p-4"><a class="nav-link" href="connect_us.html">تواصل معنا</a></li>
+					</ul>
+                    <div class="d-flex">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle style_btn" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                تسجيل الدخول
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="login.html">تسجيل الدخول</a></li>
+                                <li><a class="dropdown-item" href="#">إنشاء حساب</a></li>
+                            </ul>
+                        </div>
+                    </div>
+				</div>
+			</div>
+		</nav>
+
+		<section class="hero">
+			<div class="container">
+				<div class="row align-items-center gy-4 text-right">
+					<div class="col-lg-6">
+						<div class="p-4 p-lg-5 cardContent">
+							<h1 class="mb-3">منصّة MediTrack الذكية</h1>
+							<p class="mb-3">نظام صيدلية إلكترونية يساعدك في الوصول السريع والآمن للأدوية في غزة.</p>
+							<p class="mb-3">بسبب الحروب المستمرة، يعاني الناس من نقص الدواء وتأخر في الحصول عليه.</p>
+							<p class="mb-3">MediTrack جاء ليسد هذه الفجوة</p>
+							<p class="mb-3">يوفر النظام:</p>
+							<ul class="mb-4 p-4 rounded-3">
+								<li>قاعدة بيانات دقيقة للأدوية</li>
+								<li>سهولة في طلب الدواء ومتابعة حالته</li>
+								<li>دعم للمنظمات الطبية في الطوارئ</li>
+								<li>حماية للمعلومات الصحية عبر نظام آمن</li>
+							</ul>
+							<p class="mb-3">هدفنا دعم صمود الناس، وتحسين الرعاية رغم الظروف الصعبة.ابدأ الآن، وخلي صحتك أقوى.</p>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="photo text-center text-lg-end">
+							<img src="img/dr.png" alt="طبيب" class="img-fluid">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="startSection py-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 text-center mb-5">
+						<h2 class="fw-bold">ابدأ من هنا</h2>
+					</div>
+				</div>
+				<div class="row g-4 justify-content-center">
+					<div class="col-lg-3 col-md-6 col-sm-8 mb-4 m-4">
+						<div class="start-card text-center p-4">
+							<div class="icon-circle mb-3">
+								<img src="img/doctor 1.png" alt="طبيب" class="img-fluid">
+							</div>
+							<h5 class="fw-bold mb-3">الدخول كطبيب</h5>
+							<p class="text-muted">إدارة وصفات المرضى، متابعة الأدوية، وتحديث السجلات الطبية.
+							</p>
+						</div>
+					</div>
+		
+					<div class="col-lg-3 col-md-6 col-sm-8 mb-4 m-4">
+						<div class="start-card text-center p-4">
+							<div class="icon-circle mb-3">
+								<img src="img/doctor 2.png" alt="مريض" class="img-fluid">
+							</div>
+							<h5 class="fw-bold mb-3">الدخول كمريض</h5>
+							<p class="text-muted">طلب الأدوية، متابعة حالتك الصحية، واستعراض وصفاتك السابقة.
+							</p>
+						</div>
+					</div>
+		
+					<div class="col-lg-3 col-md-6 col-sm-8 mb-4 m-4">
+						<a href="first_aid.html" class="text-decoration-none">
+							<div class="start-card text-center p-4">
+								<div class="icon-circle mb-3">
+									<img src="img/medical_bag.png" alt="حقيبة الاسعافات" class="img-fluid">
+								</div>
+								<h5 class="fw-bold mb-3"> الاسعافات الأولية</h5>
+								<p class="text-muted">تعلم خطوات الطوارئ السريعة لإنقاذ الحياة قبل وصول المساعدة.
+								</p>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="aboutSection py-5">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-8 col-md-10">
+						<div class="about-card p-5">
+							<h2 class="fw-bold text-center mb-4">عن MediTrack</h2>
+							<p class="fw-bold fs-5 mb-4">
+								هو نظام صيدلة إلكترونية يخدم سكان غزة، يهدف لتسهيل الوصول إلى الأدوية رغم التحديات الناتجة عن الحرب والحصار.
+							</p>
+							<p class="fw-bold fs-5 mb-4">
+								يوفر النظام خدمات مثل:
+								<br>
+								طلب الدواء أونلاين، تتبع الحالة الصحية، إدارة وصفات المرضى، ودعم الطوارئ.
+								يساعد على تقليل الأخطاء الطبية، يسهل التواصل بين المريض والطبيب، يحفظ البيانات بشكل آمن، ويدعم العمل الإنساني في الظروف الطارئة.
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer py-5 position-relative overflow-hidden">
+			<img src="img/Ellipse 2.png" alt="Ellipse" class="img-fluid footer-bg-right">
+			<img src="img/Ellipse 3.png" alt="Ellipse" class="img-fluid footer-bg-left">
+
+			<div class="container position-relative">
+				<div class="row d-flex justify-content-between align-items-center text-center text-md-end">
+
+					<!-- اللوجو -->
+					<div class="col-md-4 mb-4 d-flex flex-column align-items-center align-items-md-end footer-section">
+						<img src="img/logo.png" alt="MediTrack Logo" class="img-fluid footer-logo mb-3" style="width: 100px;">
+					</div>
+
+					<!-- روابط مختصرة -->
+					<div class="col-md-4 mb-4 d-flex flex-column align-items-center align-items-md-end footer-section">
+						<h5 class="fw-bold mb-3">روابط مختصرة</h5>
+						<ul class="list-unstyled footer-links">
+							<li><a href="#" class="text-decoration-none">الصفحة الرئيسية</a></li>
+							<li><a href="#" class="text-decoration-none">عن MediTrack</a></li>
+							<li><a href="#" class="text-decoration-none">الأقسام</a></li>
+							<li><a href="#" class="text-decoration-none">تواصل معنا</a></li>
+						</ul>
+					</div>
+
+					<!-- بيانات التواصل -->
+					<div class="col-md-4 mb-4 d-flex flex-column align-items-center align-items-md-end footer-section">
+						<h5 class="fw-bold mb-3">بيانات التواصل</h5>
+						<ul class="list-unstyled footer-links">
+							<li><a href="mailto:support@meditrack.ps" class="text-decoration-none">support@meditrack.ps</a></li>
+							<li><a href="tel:0590003124" class="text-decoration-none">0590003124</a></li>
+							<li><span>من 9 صباحًا – 4 مساءً</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
